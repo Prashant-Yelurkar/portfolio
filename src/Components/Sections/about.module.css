@@ -1,0 +1,19 @@
+.main {
+    padding: 2vw 0vw;
+}
+
+
+.about_txt {
+    /* text-overflow: inheri */
+    /* font-size: clamp(1rem, 1vw, 5rem); */
+    font-size: 1.1vw;
+    white-space: pre-wrap;
+    margin-bottom: 2vw;
+}
+
+
+.roles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5vw;
+}

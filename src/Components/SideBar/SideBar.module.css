@@ -1,0 +1,149 @@
+.side-bar {
+    border: 0.2vh solid #4e4e4d;
+    /* background-color: #1e1d1d; */
+    background-color: #333231;
+
+    width: 100%;
+    border-radius: 1vw;
+    padding: 2% 8%;
+
+}
+
+.image_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.6vw 1.6vw;
+}
+
+.image_bg {
+    width: 80%;
+    background-color: #4e4e4d;
+    padding: 6%;
+    border-radius: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image_bg .profile {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/3;
+    object-fit: cover;
+    border-radius: 50%;
+    mix-blend-mode: color-dodge;
+
+}
+
+.hoverProfile {
+    position: absolute;
+    margin-top: -100px;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.image_block :hover .profile {
+    visibility: hidden;
+}
+
+.image_block :hover .hoverProfile {
+    display: block;
+
+
+}
+
+.name {
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0px;
+}
+
+.position h3 {
+    width: fit-content;
+    font-size: 1.2vw;
+    background-color: #272624;
+    padding: 2% 10%;
+    border-radius: 0.6vw;
+
+}
+
+.hr {
+    border: 0.1vh solid rgb(104, 101, 101);
+
+}
+
+
+/* INFO BLOCK  */
+
+.info_section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5vh;
+    padding: 1vw 0.5vw;
+}
+
+.info_block {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    padding: 1vh;
+}
+
+.info_block img {
+    width: 2vw;
+    height: auto;
+
+}
+
+.info_details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.info_details .title {
+    font-size: 0.8vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: wheat;
+}
+
+.info_details .data {
+    font-size: 0.85vw;
+    font-weight: 900;
+    color: white;
+}
+
+
+/* FOOTER */
+.footer_links {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    gap: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.link a {
+    display: flex;
+    height: auto;
+}
+
+.link img {
+    width: 1.4vw;
+    height: auto;
+}
+
+
+/* #febf67 */

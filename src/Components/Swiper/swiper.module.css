@@ -1,0 +1,96 @@
+.swiper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    padding-bottom: 40px;
+
+}
+
+.swiper-backface-hidden {
+    width: auto;
+}
+
+.swiper_slide {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.swiper-pagination {
+    background-color: wheat;
+}
+
+.swiper-pagination-bullet {
+    color: white !important;
+    background-color: white !important;
+}
+
+.swipperButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+.swipperButton button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--textcolor);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.swiper .swiper-pagination {
+    display: none;
+}
+
+.card {
+    width: auto;
+}
+
+.card_inner {
+    width: 100%;
+    height: auto;
+    /* box-shadow: 0px 0px 10px #4e4e4daf; */
+    padding: 1.5vw;
+    border-radius: 1vw;
+    background-color: #4e4e4daf;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 1vw;
+}
+
+
+.card_inner p {
+    font-size: 0.9vw;
+    font-weight: 100
+}
+
+.details {
+    display: flex;
+    align-items: baseline;
+    gap: 1.2vw;
+    margin-top: -2.5vw;
+}
+
+.details img {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 1vw;
+    mix-blend-mode: color-dodge;
+}
+
+.details p {
+    font-size: 1.2vw;
+    font-weight: 900
+}

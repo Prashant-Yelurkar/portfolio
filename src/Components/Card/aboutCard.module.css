@@ -1,0 +1,33 @@
+.role_block {
+    display: flex;
+    gap: 1vw;
+    /* border: 0.01px solid goldenrod; */
+    box-shadow: 0px 0px 10px #4e4e4daf;
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: #4e4e4daf;
+    transition: 0.2s;
+
+}
+
+.role_block:hover {
+    box-shadow: 0px 0px 9px goldenrod;
+
+
+}
+
+.role_block img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.role_title {
+    margin-bottom: 0.8vw;
+    font-weight: 800;
+    font-size: 1vw;
+}
+
+.role_block p {
+    font-weight: 300;
+    font-size: 1vw;
+}
