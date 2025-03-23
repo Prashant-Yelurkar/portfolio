@@ -4,11 +4,12 @@ import { Aboutdata } from '@/Utils/data'
 import IndustrySwiper from '../Swiper/IndustrySwiper'
 import BlockTitle from '../Title/BolockTitle'
 import AboutCard from '../Card/AboutCard'
+import HeadTitle from '../Title/HeadTitle'
 const About = () => {
     return (
         <div
             className={styles.main}>
-            <h1 className={styles.title}>About Me</h1>
+            <HeadTitle title={'About Me'} />
             <div
                 className={styles.about_txt}
             >

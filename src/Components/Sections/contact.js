@@ -3,6 +3,8 @@ import styles from './contact.module.css'
 import TextBox from '../FormComponents/TextBox'
 import TextArea from '../FormComponents/TextArea'
 import Button from '../FormComponents/Button'
+import BlockTitle from '../Title/BolockTitle'
+import HeadTitle from '../Title/HeadTitle'
 
 const Contact = () => {
     const [details, setDetails] = useState({
@@ -22,7 +24,7 @@ const Contact = () => {
     return (
         <div
             className={styles.main}>
-            <h1 className={styles.title}>Contact</h1>
+            <HeadTitle title={'Contact'} />
             <div
                 className={styles['map-container']}
             >
@@ -35,7 +37,7 @@ const Contact = () => {
                 <div className={styles["map-overlay"]}></div>
             </div>
 
-            <h1 className={styles.title2}>Contact Form</h1>
+            <BlockTitle title={'Contact Form'} />
             <div
                 className={styles.flex_cl}>
                 <div

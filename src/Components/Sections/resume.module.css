@@ -2,41 +2,7 @@
     padding: 2vw 0vw;
 }
 
-.title {
-    font-size: 1.9vw;
-    font-weight: 900;
-    width: fit-content;
-    position: relative;
-    margin-bottom: 2vw;
-    text-transform: capitalize;
-
-}
-
-.title::after {
-    left: 0;
-    top: 100%;
-    position: absolute;
-    content: "";
-    border: 0.4vh solid goldenrod;
-    border-top-right-radius: 21px;
-    border-bottom-right-radius: 21px;
-    animation: tab 1s ease-in-out forwards;
-}
-
-@keyframes tab {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 40%;
-    }
-}
-
-
-
-.title2 {
-    font-size: 1.5vw;
-    text-transform: capitalize;
-    margin: 1vw 0px;
+.container {
+    display: flex;
+    flex-direction: column;
 }

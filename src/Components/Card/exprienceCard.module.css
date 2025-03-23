@@ -1,0 +1,85 @@
+.flex {
+    display: flex;
+    justify-content: space-between
+}
+
+.eduactionCard {
+    position: relative;
+    padding-inline-start: 1.5vw;
+    color: whitesmoke;
+}
+
+.eduactionCardInner {
+    padding-inline-start: 1.5vw;
+    padding-bottom: 1.5vw;
+    color: whitesmoke;
+}
+
+.eduactionCardInner::before {
+    position: absolute;
+    content: '';
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #000;
+    top: 0;
+    left: 1.55vw;
+    border-radius: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #f5dab5;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.border {
+    border-left: 0.1vw solid #f5dab5;
+}
+
+
+.eduactionCardInner:hover::before {
+    background-color: goldenrod;
+}
+
+.eduactionCardInner:hover.border {
+    border-left: 0.1vw solid goldenrod;
+
+}
+
+
+.eduactionCardInner span {
+    height: fit-content;
+}
+
+.name {
+    font-size: 1.2vw;
+    height: fit-content;
+    margin-top: -0.5vw;
+    color: goldenrod;
+}
+
+.duration {
+    font-size: 0.9vw;
+    margin-top: -0.5vw;
+}
+
+.designation {
+    font-size: 1vw;
+    margin-bottom: 0.1vw;
+}
+
+.mark {
+    font-size: 0.8vw;
+
+}
+
+.description {
+    font-size: 0.9vw;
+    max-width: 70%;
+    color: #FFFFFF90;
+}
