@@ -1,11 +1,18 @@
 .main {
     padding: 2vw 0vw;
+    animation: FadeUp 1s ease-in;
+    -webkit-animation: FadeUp 1s ease-in;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    color: whitesmoke;
 }
 
 
 .about_txt {
-    /* text-overflow: inheri */
-    /* font-size: clamp(1rem, 1vw, 5rem); */
+
     font-size: 1.1vw;
     white-space: pre-wrap;
 
@@ -16,4 +23,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5vw;
+}
+
+@keyframes FadeUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }

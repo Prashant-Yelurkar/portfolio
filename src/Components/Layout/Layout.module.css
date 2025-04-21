@@ -1,5 +1,6 @@
 .layout {
-    background-color: #060606;
+    /* background-color: #060606; */
+    background-color: #252525;
     width: 100vw;
     height: 100vh;
     color: white;
@@ -24,4 +25,17 @@
 
 
 
-@media (min-width: 600px) {}
+@media (max-width: 600px) {
+    .layout {
+        padding: 0%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+}
