@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from './SideBar.module.css'
 import profileIcon from '@/Assets/Images/profile.jpg'
 import profileIcon2 from '@/Assets/Images/profilehover.png'
@@ -7,6 +7,7 @@ import { ContactDetails, SocialLinks } from '@/Utils/data'
 import Link from 'next/link'
 
 const SideBar = () => {
+
     return (
         <div
             className={styles['side-bar']}>
@@ -29,20 +30,32 @@ const SideBar = () => {
             <div
                 className={styles.info_section}>
                 {
-                    ContactDetails.map((item, index) => {
-                        return (
-                            <div className={styles.info_block}>
+                    ContactDetails.map((item, index) => (
+                        item.link ? (
+                            <Link
+                                key={index}
+                                href={item.link}
+                                className={styles.info_block}>
                                 <Image src={item.icon} alt='img' />
-                                <div
-                                    className={styles.info_details}>
+                                <div className={styles.info_details}>
                                     <p className={styles.title}>{item.label}</p>
-                                    {item.link ? <Link className={styles.data} href={item.link}>{item.data}</Link> : <p className={styles.data}>{item.data}</p>}
-
+                                    <p className={styles.data}>{item.data}</p>
+                                </div>
+                            </Link>
+                        ) : (
+                            <div
+                                key={index}
+                                className={styles.info_block}>
+                                <Image src={item.icon} alt='img' />
+                                <div className={styles.info_details}>
+                                    <p className={styles.title}>{item.label}</p>
+                                    <p className={styles.data}>{item.data}</p>
                                 </div>
                             </div>
                         )
-                    })
+                    ))
                 }
+
             </div>
 
             <div

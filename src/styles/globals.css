@@ -35,3 +35,7 @@ a {
 .swiper-pagination-bullet-active {
   background-color: goldenrod !important;
 }
+
+.nextjs-toast {
+  display: none !important;
+}

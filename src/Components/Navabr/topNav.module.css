@@ -1,0 +1,41 @@
+.main {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.menu {
+    border: 1px solid goldenrod;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main img {
+    width: 30px;
+    height: auto;
+    transition: 0.3s;
+    animation: FadeUp 0.3s ease-in-out;
+}
+
+@keyframes FadeUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .main {
+        display: none;
+    }
+}

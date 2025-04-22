@@ -47,3 +47,37 @@
 .contant_input ::-webkit-input-placeholder {
     color: transparent;
 }
+
+
+@media (max-width: 600px) {
+
+
+
+    .contant_input input {
+        width: 100%;
+        height: 50px;
+        font-size: 12px;
+        padding-inline: 14px;
+        border-radius: 12px;
+    }
+
+
+    .contant_input label {
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translate(0%, -50%);
+    }
+
+    .contant_input:focus-within label,
+    .contant_input:focus-within label::after,
+    .contant_input label.has-value,
+    .contant_input label.has-value::after {
+        top: 0%;
+        left: 15px;
+        transform: translate(0%, -50%);
+        content: "";
+
+    }
+}

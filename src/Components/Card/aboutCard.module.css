@@ -25,9 +25,34 @@
     margin-bottom: 0.8vw;
     font-weight: 800;
     font-size: 1vw;
+    color: #f5dab5;
 }
 
 .role_block p {
     font-weight: 300;
     font-size: 1vw;
+}
+
+@media (max-width: 600px) {
+    .role_block {
+        padding: 15px 15px;
+        gap: 10px;
+    }
+
+    .role_block img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .role_title {
+        font-weight: 800;
+        font-size: 15px;
+    }
+
+    .role_block p {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
 }

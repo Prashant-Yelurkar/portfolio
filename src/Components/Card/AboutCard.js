@@ -6,7 +6,7 @@ const AboutCard = (props) => {
     return (
         <div
             className={styles.role_block}>
-            <Image src={icon} />
+            <Image src={icon} alt='icon' />
             <div>
                 <h4 className={styles.role_title}>{label}</h4>
                 <p>{description}</p>

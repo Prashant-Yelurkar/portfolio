@@ -43,3 +43,38 @@
 .contant_input ::-webkit-input-placeholder {
     color: transparent;
 }
+
+@media (max-width: 600px) {
+
+
+
+    .contant_input textarea {
+        width: 100%;
+        height: 150px;
+        font-size: 12px;
+        padding-inline: 15px;
+        padding-block: 15px;
+        border-radius: 12px;
+        resize: none;
+    }
+
+
+    .contant_input label {
+        font-size: 15px;
+        position: absolute;
+        top: 20%;
+        left: 20px;
+        transform: translate(0%, -50%);
+    }
+
+    .contant_input:focus-within label,
+    .contant_input:focus-within label::after,
+    .contant_input label.has-value,
+    .contant_input label.has-value::after {
+        top: 0%;
+        left: 15px;
+        transform: translate(0%, -50%);
+        content: "";
+
+    }
+}

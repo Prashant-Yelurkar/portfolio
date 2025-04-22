@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     width: fit-content;
+    color: #f5dab5;
 }
 
 .title {
@@ -13,6 +14,7 @@
     position: relative;
     margin-bottom: 2vw;
     text-transform: capitalize;
+    color: #f5dab5;
 
 }
 
@@ -63,14 +65,31 @@
     mix-blend-mode: difference;
 }
 
+@media (max-width: 600px) {
+    .title {
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .title::after {
+        top: 110%;
+    }
+}
+
+.title2 {
+    font-size: 19px;
+}
+
 
 
 @keyframes tab {
     0% {
         width: 0%;
+        opacity: 0.5;
     }
 
     100% {
         width: 40%;
+        opacity: 1;
     }
 }

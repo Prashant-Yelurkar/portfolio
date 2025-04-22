@@ -7,7 +7,7 @@
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    color: whitesmoke;
+    color: #ffffff90;
 }
 
 
@@ -23,6 +23,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5vw;
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 10px;
+    }
+
+    .about_txt {
+        margin: 30px 0px 20px 0px;
+        font-size: 16px;
+        text-align: justify;
+
+    }
+
+    .roles {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px
+    }
 }
 
 @keyframes FadeUp {

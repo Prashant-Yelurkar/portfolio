@@ -29,6 +29,7 @@ const About = () => {
                     })
                 }
             </div>
+
             <BlockTitle title={"Testmonials"} />
             <IndustrySwiper data={Aboutdata.testimonials} />
         </div>
