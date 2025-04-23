@@ -83,3 +83,53 @@
     max-width: 70%;
     color: #FFFFFF90;
 }
+
+@media (max-width: 600px) {
+    .eduactionCard {
+        position: relative;
+        padding-inline-start: 1.5vw;
+        color: whitesmoke;
+
+    }
+
+    .eduactionCardInner {
+        padding: 0px 0px 20px 12px;
+        font-size: 12px;
+    }
+
+    .eduactionCardInner::before {
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        top: 0;
+        background-color: #f5dab5;
+    }
+
+
+    .name {
+        font-size: 15px;
+        height: fit-content;
+        margin: -5px 0px 5px 0px
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .designation {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .duration {
+        margin: 0px 0px 10px 0px;
+        font-size: 12px;
+    }
+
+
+    .description {
+        font-size: 11px;
+        max-width: 90%;
+        text-align: justify;
+    }
+}

@@ -11,7 +11,7 @@ const IndustrySwiper = ({ data }) => {
     return (
         <div className={styles.bottom_oc}>
             <Swiper
-                // loop={true}
+                loop={true}
                 slidesPerView={"auto"}
                 spaceBetween={20}
                 autoplay={{

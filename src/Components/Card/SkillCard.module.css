@@ -1,6 +1,8 @@
 .skill_block {
-    width: 5vw;
+    min-width: 5vw;
     height: 5vw;
+    max-width: fit-content;
+    width: 100%;
     border-radius: 1vw;
     background-color: grey;
     cursor: pointer;
@@ -8,6 +10,7 @@
     font-weight: 700;
     padding: 0.5vw;
 }
+
 
 .skill_block_inner {
     width: 100%;
@@ -19,6 +22,7 @@
     overflow: hidden;
 }
 
+
 .icon {
     width: 100%;
     height: 80%;
@@ -27,10 +31,24 @@
     justify-content: center;
 }
 
+
 .icon img {
     width: auto;
     height: 100%;
-    /* object-fit: contain; */
-    /* aspect-ratio: 4/3; */
+    object-fit: contain;
+    aspect-ratio: 4/3;
+}
+
+
+@media (max-width: 600px) {
+    .skill_block {
+        min-width: 100px;
+        height: 130px;
+        max-width: auto;
+        font-size: 12px;
+        margin-top: 15px;
+        background: #ffffff10;
+    }
+
 
 }

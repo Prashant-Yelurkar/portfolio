@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "next": "15.2.2",
+    "nodemailer": "^6.10.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^11.2.5"
+    "sonner": "^2.0.3",
+    "sooner": "^1.1.4",
+    "swiper": "^11.2.5",
+    "zod": "^3.24.3"
   }
 }

@@ -74,6 +74,25 @@
     .title::after {
         top: 110%;
     }
+
+    .tatle_block {
+        gap: 13px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon img {
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 }
 
 .title2 {

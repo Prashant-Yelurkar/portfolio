@@ -6,9 +6,9 @@ import locationIcon from '@/Assets/Icons/location.png'
 export const ContactDetails = [
     {
         label: "Email",
-        data: 'prashantyelurkar2004@gmail.com',
+        data: 'devby.prashantyelurkar@gmail.com',
         icon: emailIcon,
-        link: 'mailto:prashantyelurkar2004@gmail.com'
+        link: 'mailto:devby.prashantyelurkar@gmail.com'
     },
     {
         label: "Phone",
@@ -31,6 +31,7 @@ export const ContactDetails = [
     }
 ]
 
+export const MyLocation = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9905464938474!2d72.90066877606414!3d19.108070650963295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c70ef9d1c839%3A0xc3d20824443b231d!2s13%2FB%2F%20505%2C%20Sangharsh%20Nagar%2C%20Chandivali%2C%20Powai%2C%20Mumbai%2C%20Maharashtra%20400072!5e0!3m2!1sen!2sin!4v1741999650281!5m2!1sen!2sin"
 
 import getIcon from '@/Assets/Icons/github.svg'
 import linkedinIcon from '@/Assets/Icons/linkedin.svg'
@@ -239,29 +240,34 @@ export const Language = [
     }
 ]
 
-
+import bootstrapIcon from '@/Assets/frameworks/bootstrap.png'
+import codeigniterIcon from '@/Assets/frameworks/codeigniter.png'
+import expressIcon from '@/Assets/frameworks/express.png'
+import nextIcon from '@/Assets/frameworks/next.png'
+import nodeIcon from '@/Assets/frameworks/node.png'
+import reactIcon from '@/Assets/frameworks/react.png'
 export const FrameWork = [
     {
-        name: "C",
-        icon: cIcon
+        name: "Bootstrap",
+        icon: bootstrapIcon
     },
     {
-        name: "C++",
-        icon: cppIcon
+        name: "Codeigniter",
+        icon: codeigniterIcon
     },
     {
-        name: "PHP",
-        icon: phpIcon
+        name: "Express",
+        icon: expressIcon
     },
     {
-        name: "SQL",
-        icon: sqlIcon
+        name: "Next JS",
+        icon: nextIcon
     },
     {
-        name: "JavaScript",
-        icon: jsIcon
+        name: "Node ",
+        icon: nodeIcon
     },
     {
-        name: "JQuery",
-        icon: jqueryIcon
+        name: "React",
+        icon: reactIcon
     }]

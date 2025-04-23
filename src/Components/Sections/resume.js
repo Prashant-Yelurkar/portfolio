@@ -5,7 +5,7 @@ import BlockTitle from '../Title/BolockTitle'
 import educationIcon from '@/Assets/Icons/education.png'
 import exprienceIcon from '@/Assets/Icons/experience.png'
 import teckStackIcon from '@/Assets/Icons/teckStack.png'
-import { Education, Exprience, Language } from '@/Utils/data'
+import { Education, Exprience, FrameWork, Language } from '@/Utils/data'
 import EducationCard from '../Card/EducationCard'
 import ExprienceCard from '../Card/ExprienceCard'
 import InfinityScroller from '../Scroller/InfinityScroller'
@@ -56,13 +56,13 @@ const Resume = () => {
             <InfinityScroller>
 
                 {
-                    Language.map((lan, index) => {
+                    FrameWork.map((lan, index) => {
                         return <SkillCard key={index} {...lan} />
                     })
                 }
 
             </InfinityScroller>
-            <br />
+            {/* <br />
             <InfinityScroller>
 
                 {
@@ -71,7 +71,7 @@ const Resume = () => {
                     })
                 }
 
-            </InfinityScroller>
+            </InfinityScroller> */}
         </div>
     )
 }

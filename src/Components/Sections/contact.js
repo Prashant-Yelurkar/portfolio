@@ -5,54 +5,119 @@ import TextArea from '../FormComponents/TextArea'
 import Button from '../FormComponents/Button'
 import BlockTitle from '../Title/BolockTitle'
 import HeadTitle from '../Title/HeadTitle'
+import { contactSchema } from '@/Actions/Schema/ContactSchema'
+import { toast } from 'sonner'
+import { MyLocation } from '@/Utils/data'
+import LoaderWrapper from '../Loaders/LoaderWrapper'
 
 const Contact = () => {
     const [details, setDetails] = useState({
-        fname: null,
-        lname: null,
-        desc: null
+        fname: "",
+        lname: "",
+        email: "",
+        desc: ""
     })
+    const [loading, setLoading] = useState(false)
+
     const handelChange = (key, value) => {
         setDetails((preview) => {
             return { ...preview, [key]: value }
         })
     }
-    const handelSubmit = () => {
-        console.log(details);
+    const handelSubmit = async () => {
+        const result = contactSchema.safeParse(details);
 
+        if (!result.success) {
+            result.error.errors.forEach((err) => {
+                toast.error(err.message);
+            });
+            return;
+        }
+        setLoading(true)
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: `${details.fname} ${details.lname}`,
+                    email: details.email,
+                    message: details.desc
+                })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                toast.success('Email sent successfully!');
+                setDetails({
+                    fname: "",
+                    lname: "",
+                    email: "",
+                    desc: ""
+                })
+            } else {
+                toast.error(data.message || 'Something went wrong.');
+            }
+        } catch (err) {
+            console.error(err);
+            toast.error('Failed to send email.');
+        }
+        finally {
+            setLoading(false)
+        }
     }
-    return (
-        <div
-            className={styles.main}>
-            <HeadTitle title={'Contact'} />
-            <div
-                className={styles['map-container']}
-            >
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9905464938474!2d72.90066877606414!3d19.108070650963295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c70ef9d1c839%3A0xc3d20824443b231d!2s13%2FB%2F%20505%2C%20Sangharsh%20Nagar%2C%20Chandivali%2C%20Powai%2C%20Mumbai%2C%20Maharashtra%20400072!5e0!3m2!1sen!2sin!4v1741999650281!5m2!1sen!2sin"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <div className={styles["map-overlay"]}></div>
-            </div>
 
-            <BlockTitle title={'Contact Form'} />
+    return (
+        <LoaderWrapper loading={loading}>
             <div
-                className={styles.flex_cl}>
+                className={styles.main}>
+
+                <HeadTitle title={'Contact'} />
                 <div
-                    className={styles.flex_rw}>
-                    <TextBox
-                        name={"First Name"} onChange={(value) => handelChange('fname', value)} />
-                    <TextBox
-                        name={"Last Name"} onChange={(value) => handelChange('lname', value)} />
+                    className={styles['map-container']}
+                >
+                    <iframe
+                        src={MyLocation}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div className={styles["map-overlay"]}></div>
                 </div>
-                <TextArea
-                    name={"Enter Your Query"} rows={6} onChange={(value) => handelChange('desc', value)} />
-                <Button name="Submit" fn={handelSubmit} />
+
+                <BlockTitle title={'Contact Form'} />
+                <div
+                    className={styles.flex_cl}>
+                    <div
+                        className={styles.flex_rw}>
+                        <TextBox
+                            value={details.fname}
+                            type={"text"}
+                            name={"First Name"}
+                            onChange={(value) => handelChange('fname', value)} />
+                        <TextBox
+                            value={details.lname}
+                            type={"text"}
+                            name={"Last Name"}
+                            onChange={(value) => handelChange('lname', value)} />
+                    </div>
+                    <TextBox
+                        value={details.email}
+                        type={"email"}
+                        name={"Email"}
+                        onChange={(value) => handelChange('email', value)} />
+                    <TextArea
+                        value={details.desc}
+                        type={"text"}
+                        name={"Enter Your Query"} rows={3} onChange={(value) => handelChange('desc', value)} />
+                    <Button name="Submit" fn={handelSubmit} />
+                </div>
             </div>
-        </div>
+        </LoaderWrapper >
     )
 }
 
 export default Contact
+

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Toaster } from "sonner";
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './Layout.module.css'
 import SideBar from '../SideBar/SideBar';
@@ -44,6 +45,7 @@ const Layout = (props) => {
                 <div
                     ref={divRef}
                     className={styles.main}>
+                    <Toaster richColors />
                     {children}
                 </div>
             </main>
