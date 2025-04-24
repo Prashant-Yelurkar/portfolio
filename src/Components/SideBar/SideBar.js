@@ -34,6 +34,7 @@ const SideBar = () => {
                         item.link ? (
                             <Link
                                 key={index}
+                                target='_blank'
                                 href={item.link}
                                 className={styles.info_block}>
                                 <Image src={item.icon} alt='img' />
@@ -65,7 +66,8 @@ const SideBar = () => {
                         return (
                             <div
                                 className={styles.link}>
-                                <Link href={item.link}>
+                                <Link href={item.link}
+                                    target='_blank'>
                                     <Image src={item.icon} alt={item.label} />
                                 </Link>
                             </div>

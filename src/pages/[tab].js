@@ -4,14 +4,10 @@ import { useRouter } from 'next/router'
 
 const Tab = () => {
     const router = useRouter()
-
     const tab = router.query.tab
-
-
 
     return (
         <Home
-            router={router}
             tab={tab} />
     )
 }
