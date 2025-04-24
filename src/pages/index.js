@@ -1,6 +1,7 @@
 import Layout from "@/Components/Layout/Layout";
 import About from "@/Components/Sections/about";
 import Contact from "@/Components/Sections/contact";
+import Project from "@/Components/Sections/projects";
 import Resume from "@/Components/Sections/resume";
 import styles from '@/styles/Home.module.css'
 import React, { useRef, useState } from 'react'
@@ -17,7 +18,7 @@ const Index = () => {
     },
     {
       label: "Projects",
-      tab: '',
+      tab: <Project />,
     },
     {
       label: "Contact",

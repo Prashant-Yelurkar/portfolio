@@ -10,7 +10,27 @@ import EducationCard from '../Card/EducationCard'
 import ExprienceCard from '../Card/ExprienceCard'
 import InfinityScroller from '../Scroller/InfinityScroller'
 import SkillCard from '../Card/SkillCard'
+
+import downloadIcon from '@/Assets/Icons/download.png'
+import Image from 'next/image'
 const Resume = () => {
+
+    const handleDownload = (e) => {
+        e.preventDefault();
+
+        const button = e.currentTarget;
+        button.classList.add(styles.btn_animation);
+        const pdfUrl = '/Prashant_Resume.pdf';
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'cv.pdf';
+        document.body.appendChild(link);
+        setTimeout(() => {
+            button.classList.remove(styles.btn_animation)
+            link.click();
+            document.body.removeChild(link);
+        }, 2000)
+    };
     return (
         <div
             className={styles.main}>
@@ -39,22 +59,16 @@ const Resume = () => {
                 </div>
 
             </div>
-            {/* <a href="/Prashant_Resume.pdf" download>
-                Download Resume
-            </a> */}
+
             <BlockTitle title={"TechStack"} icon={teckStackIcon} />
-            <InfinityScroller>
+            <InfinityScroller
+                speed={40}>
 
                 {
                     Language.map((lan, index) => {
                         return <SkillCard key={index} {...lan} />
                     })
                 }
-
-            </InfinityScroller>
-            <br />
-            <InfinityScroller>
-
                 {
                     FrameWork.map((lan, index) => {
                         return <SkillCard key={index} {...lan} />
@@ -62,16 +76,20 @@ const Resume = () => {
                 }
 
             </InfinityScroller>
-            {/* <br />
-            <InfinityScroller>
+            <div className={styles.btn_block}>
+                <button
+                    aria-label="Download Resume"
+                    onClick={handleDownload}
+                    className={styles.btn}>
+                    <div
+                        className={styles.img_block}>
 
-                {
-                    Language.map((lan, index) => {
-                        return <SkillCard key={index} {...lan} />
-                    })
-                }
+                        <Image src={downloadIcon} alt="icon" />
+                    </div>
+                    <p>Download Resume</p>
+                </button>
+            </div>
 
-            </InfinityScroller> */}
         </div>
     )
 }

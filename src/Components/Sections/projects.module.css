@@ -1,0 +1,15 @@
+.main {
+    padding: 2vw 0vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 10px;
+    }
+}

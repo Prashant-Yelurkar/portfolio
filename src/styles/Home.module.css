@@ -48,10 +48,10 @@
     transition: 0.5s;
 }
 
-.tab:hover {
+/* .tab:hover {
     color: goldenrod;
     background-color: #25252570;
-}
+} */
 
 .selected_tab {
     transition: 1s;

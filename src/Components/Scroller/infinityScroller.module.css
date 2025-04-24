@@ -3,12 +3,16 @@
     overflow: hidden;
     position: relative;
     height: auto;
+    padding: 10px 0px;
 }
 
 .scroll-content {
     display: flex;
     gap: 20px;
-    animation: scroll 20s linear infinite;
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-duration: 20s; */
     width: max-content;
 }
 
