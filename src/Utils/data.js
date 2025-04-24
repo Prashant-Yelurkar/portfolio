@@ -25,7 +25,7 @@ export const ContactDetails = [
     {
         label: "Location",
         icon: locationIcon,
-        link: 'https://icons8.com/icons/set/email--technique-line',
+        link: 'https://maps.app.goo.gl/qCPYzSQvSeBdcgKJ8',
         data: 'India, Mumbai'
 
     }
@@ -271,3 +271,57 @@ export const FrameWork = [
         name: "React",
         icon: reactIcon
     }]
+
+
+import Memoryproject from '@/Assets/Projects/memoryGame.png'
+import OSProject from '@/Assets/Projects/OS.png'
+import TurfProject from '@/Assets/Projects/TurfManagemant.png'
+import calculatorProject from '@/Assets/Projects/Calculator.png'
+import MADProject from '@/Assets/Projects/MAD.png'
+
+
+
+export const MyProjects = [
+    {
+        id: 1,
+        name: "Memorry Game",
+        desc: "Card Game",
+        img: Memoryproject,
+        git: 'https://github.com/Prashant-Yelurkar/mini-project.git',
+        hostLink: 'https://mini-project-ten-silk.vercel.app/'
+    },
+    {
+        id: 2,
+        name: "Visilization",
+        desc: "OS Sheduling Algorithm",
+        img: OSProject,
+        git: 'https://github.com/Prashant-Yelurkar/Scheduling_Algorithms.git',
+        hostLink: 'https://prashant-yelurkar.github.io/Scheduling_Algorithms/'
+    },
+    {
+        id: 3,
+        name: "Turf Management",
+        desc: "Website",
+        img: TurfProject,
+        git: 'https://github.com/Prashant-Yelurkar/Turf-Managemant-Frontened',
+        hostLink: 'https://turf-managemant-frontened.vercel.app/'
+    },
+    {
+        id: 4,
+        name: "Calculator",
+        desc: "Simple Calculator",
+        img: calculatorProject,
+        git: 'https://github.com/Prashant-Yelurkar/Calculator.git',
+        hostLink: 'https://prashant-yelurkar.github.io/Calculator/'
+    },
+    {
+        id: 5,
+        name: "Mobile Appliacation ",
+        desc: "App development Learming App",
+        img: MADProject,
+        git: 'https://github.com/Prashant-Yelurkar/MobileApplicationDevelopment',
+        hostLink: 'https://github.com/Prashant-Yelurkar/MobileApplicationDevelopment'
+    },
+
+
+]
