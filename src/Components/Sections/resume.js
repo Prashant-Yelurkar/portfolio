@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './resume.module.css'
 import HeadTitle from '../Title/HeadTitle'
 import BlockTitle from '../Title/BolockTitle'
@@ -13,6 +13,7 @@ import SkillCard from '../Card/SkillCard'
 
 import downloadIcon from '@/Assets/Icons/download.png'
 import Image from 'next/image'
+import ExprienceInfoLayout from './exprience'
 const Resume = () => {
 
     const handleDownload = (e) => {
@@ -31,66 +32,90 @@ const Resume = () => {
             document.body.removeChild(link);
         }, 2000)
     };
+
+    const [selectedInfo, setSelectedInfo] = useState({
+        name: '',
+        id: null
+    })
+
+    const Pages = {
+        "Exprience": <ExprienceInfoLayout onBack={() => setSelectedInfo({})} />,
+        "Education": <ExprienceInfoLayout onBack={() => setSelectedInfo({})} />
+    }
     return (
         <div
             className={styles.main}>
-            <HeadTitle title={'Resume'} />
+            {
+                !selectedInfo.id ?
+                    <>
+                        <HeadTitle title={'Resume'} />
 
-            <div>
-                <BlockTitle icon={educationIcon} title={"Education"} />
-                <div
-                    className={styles.container}>
-                    {
-                        Education.map((item, index) => (
-                            <EducationCard key={index} {...item} isLast={Education.length - 1 != index} />
-                        ))
-                    }
-                </div>
-            </div>
-            <div>
-                <BlockTitle icon={exprienceIcon} title={"Experience"} />
-                <div
-                    className={styles.container}>
-                    {
-                        Exprience.map((item, index) => (
-                            <ExprienceCard key={index} {...item} isLast={Exprience.length - 1 != index} />
-                        ))
-                    }
-                </div>
+                        <div>
+                            <BlockTitle icon={educationIcon} title={"Education"} />
+                            <div
+                                className={styles.container}>
+                                {
+                                    Education.map((item, index) => (
+                                        <EducationCard key={index} {...item} isLast={Education.length - 1 != index} />
+                                    ))
+                                }
+                            </div>
+                        </div>
+                        <div>
+                            <BlockTitle icon={exprienceIcon} title={"Experience"} />
+                            <div
+                                className={styles.container}>
+                                {
+                                    Exprience.map((item, index) => (
+                                        <ExprienceCard
+                                            onSelect={() => setSelectedInfo({
+                                                name: "Exprience",
+                                                id: item.id
+                                            })}
+                                            key={index}
+                                            {...item}
+                                            isLast={Exprience.length - 1 != index} />
+                                    ))
+                                }
+                            </div>
 
-            </div>
+                        </div>
 
-            <BlockTitle title={"TechStack"} icon={teckStackIcon} />
-            <InfinityScroller
-                speed={40}>
+                        <BlockTitle title={"TechStack"} icon={teckStackIcon} />
+                        <InfinityScroller
+                            speed={40}>
 
-                {
-                    Language.map((lan, index) => {
-                        return <SkillCard key={index} {...lan} />
-                    })
-                }
-                {
-                    FrameWork.map((lan, index) => {
-                        return <SkillCard key={index} {...lan} />
-                    })
-                }
+                            {
+                                Language.map((lan, index) => {
+                                    return <SkillCard key={index} {...lan} />
+                                })
+                            }
+                            {
+                                FrameWork.map((lan, index) => {
+                                    return <SkillCard key={index} {...lan} />
+                                })
+                            }
 
-            </InfinityScroller>
-            <div className={styles.btn_block}>
-                <button
-                    aria-label="Download Resume"
-                    onClick={handleDownload}
-                    className={styles.btn}>
-                    <div
-                        className={styles.img_block}>
+                        </InfinityScroller>
+                        <div className={styles.btn_block}>
+                            <button
+                                aria-label="Download Resume"
+                                onClick={handleDownload}
+                                className={styles.btn}>
+                                <div
+                                    className={styles.img_block}>
 
-                        <Image src={downloadIcon} alt="icon" />
-                    </div>
-                    <p>Download Resume</p>
-                </button>
-            </div>
+                                    <Image src={downloadIcon} alt="icon" />
+                                </div>
+                                <p>Download Resume</p>
+                            </button>
+                        </div>
+                    </>
+                    :
+                    Pages[selectedInfo.name]
+            }
 
-        </div>
+        </div >
     )
 }
 

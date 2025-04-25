@@ -37,7 +37,7 @@
     height: 100%;
     object-fit: contain;
     aspect-ratio: 4/3;
-
+    mix-blend-mode: color-burn;
 
 }
 
@@ -48,7 +48,7 @@
 }
 
 .skill_block:hover img {
-    mix-blend-mode: difference;
+    mix-blend-mode: lighten;
 }
 
 

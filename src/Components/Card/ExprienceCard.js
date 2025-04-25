@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './exprienceCard.module.css'
 import Link from 'next/link'
 const ExprienceCard = (props) => {
-    const { name, designation, duration, description, marks, isLast, link } = props
+    const { name, designation, duration, description, isLast, link, onSelect } = props
     return (
         <div
             className={styles.eduactionCard} >
@@ -10,7 +10,9 @@ const ExprienceCard = (props) => {
                 className={`${styles.eduactionCardInner} ${isLast && styles.border}`}>
                 <div
                     className={styles.flex}>
-                    <Link href={link}><p className={styles.name}>{name}</p></Link>
+                    <Link href={link}>
+                        <p className={styles.name}>{name}</p>
+                    </Link>
                     <p className={styles.duration}>{duration}</p>
 
                 </div>
@@ -24,6 +26,9 @@ const ExprienceCard = (props) => {
                 <p className={styles.description}>
                     {description}
                 </p>
+                <p
+                    onClick={onSelect}
+                    className={styles.more}>Know More.....</p>
             </div>
 
         </div>

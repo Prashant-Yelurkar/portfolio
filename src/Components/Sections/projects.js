@@ -8,7 +8,7 @@ const Project = () => {
     return (
         <div
             className={styles.main}>
-            <HeadTitle title={'Projects'} />
+            <HeadTitle title={'My Projects'} />
 
             <div
                 className={styles.projectGrid}>

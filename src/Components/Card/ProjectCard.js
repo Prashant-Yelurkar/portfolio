@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
 
     const handleGitClick = (e) => {
         e.stopPropagation();
-        window.open(git, '_blank'); // open GitHub link in new tab
+        window.open(git, '_blank');
     };
 
     const handleCardClick = () => {
@@ -26,13 +26,17 @@ const ProjectCard = (props) => {
                 <p>{name}</p>
                 <div className={styles.addDetails}>
                     <span>{desc}</span>
-                    <button
-                        onClick={handleGitClick}
-                        className={styles.gitButton}
-                        aria-label="GitHub Link"
-                    >
-                        <Image src={githubIcon} alt="GitHub icon" />
-                    </button>
+                    {
+                        git && <button
+                            onClick={handleGitClick}
+                            className={styles.gitButton}
+                            aria-label="GitHub Link"
+                        >
+
+                            <Image src={githubIcon} alt="GitHub icon" />
+                        </button>
+                    }
+
                 </div>
             </div>
         </div>

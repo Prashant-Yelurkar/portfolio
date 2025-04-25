@@ -1,0 +1,51 @@
+.swiper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px !important;
+    padding: 20px 20px 0px 20px;
+    margin-left: -20px;
+}
+
+
+.swiper_slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: fit-content;
+    width: 100%;
+
+}
+
+
+.card {
+    max-width: 600px;
+    width: 100%;
+}
+
+.photos {
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: scale-down;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.photos img {
+    width: auto;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+
+    .swiper_slide {
+        width: 100%;
+    }
+
+
+}

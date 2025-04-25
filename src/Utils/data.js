@@ -150,16 +150,74 @@ export const Education = [
 
 ]
 
+import vibrtProject from '@/Assets/Company/projects/vibrt.png'
+import vibrtIcon from '@/Assets/Company/icon/vibrt.svg'
+import tuskarProject from '@/Assets/Company/projects/tuskar.png'
+import vibrtPhoto1 from '@/Assets/Company/achivements/vibrt1.png'
+import vibrtPhoto2 from '@/Assets/Company/achivements/vibrt2.png'
+import vibrtPhoto3 from '@/Assets/Company/achivements/vibrt3.png'
+import vibrtPhoto4 from '@/Assets/Company/achivements/vibrt4.png'
+
 
 export const Exprience = [
     {
+        id: 1,
         link: "https://vibrt.com/",
         name: "Vibrt Private Limited",
+        address: " No 302, BLDG, R, Abdul Rehm REHM BLDG,400008, R 302, Abdul Rehm BLDGR, 302, Abdul Rehman St, Navpada, Mumbai, Maharashtra 400051",
         designation: "Frontend Web Developer",
         duration: "June 2022 - Auguest 2022",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        icon: vibrtIcon,
+        about: `
+In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+
+In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
+`,
+        projects: [
+            {
+                id: 1,
+                name: "Vibrt.com",
+                desc: "Website",
+                img: vibrtProject,
+                hostLink: 'https://vibrt.com/'
+            },
+            {
+                id: 2,
+                name: "Tuskar",
+                desc: "Website",
+                img: tuskarProject,
+                hostLink: 'https://www.vibrt.com/tusker/index.html'
+            },
+            {
+                id: 2,
+                name: "Tuskar",
+                desc: "Website",
+                img: tuskarProject,
+                hostLink: 'https://www.vibrt.com/tusker/index.html'
+            },
+            {
+                id: 2,
+                name: "Tuskar",
+                desc: "Website",
+                img: tuskarProject,
+                hostLink: 'https://www.vibrt.com/tusker/index.html'
+            },
+            {
+                id: 2,
+                name: "Tuskar",
+                desc: "Website",
+                img: tuskarProject,
+                hostLink: 'https://www.vibrt.com/tusker/index.html'
+            }
+        ],
+        photos: [
+            vibrtPhoto1, vibrtPhoto2, vibrtPhoto3, vibrtPhoto4
+        ]
+
     },
     {
+        id: 2,
         link: "https://softscribble.com/index.html",
         name: "Softscribble Pvt Ltd",
         designation: "Junior Developer",
@@ -167,6 +225,7 @@ export const Exprience = [
         description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
     },
     {
+        id: 3,
         link: 'https://www.sublimeenterprise.com/',
         name: "Sublime Enterprises",
         designation: "PHP Developer",
@@ -174,6 +233,7 @@ export const Exprience = [
         description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
     },
     {
+        id: 4,
         link: 'https://www.varcsoft.com/',
         name: "Varcsoft",
         designation: "Full Stack Developer",
@@ -182,6 +242,7 @@ export const Exprience = [
 
     },
     {
+        id: 5,
         link: 'https://www.varcsoft.com/',
         name: "Varcsoft",
         designation: "Full Stack Developer",
@@ -306,14 +367,14 @@ export const MyProjects = [
         git: 'https://github.com/Prashant-Yelurkar/Turf-Managemant-Frontened',
         hostLink: 'https://turf-managemant-frontened.vercel.app/'
     },
-    {
-        id: 4,
-        name: "Calculator",
-        desc: "Simple Calculator",
-        img: calculatorProject,
-        git: 'https://github.com/Prashant-Yelurkar/Calculator.git',
-        hostLink: 'https://prashant-yelurkar.github.io/Calculator/'
-    },
+    // {
+    //     id: 4,
+    //     name: "Calculator",
+    //     desc: "Simple Calculator",
+    //     img: calculatorProject,
+    //     git: 'https://github.com/Prashant-Yelurkar/Calculator.git',
+    //     hostLink: 'https://prashant-yelurkar.github.io/Calculator/'
+    // },
     {
         id: 5,
         name: "Mobile Appliacation ",

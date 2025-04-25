@@ -1,0 +1,84 @@
+.main {
+    position: relative;
+    animation: FadeUp 1s ease-in;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.07;
+    /* filter: drop-shadow(0px 0px 3px #ffffff);
+    -webkit-filter: drop-shadow(0px 0px 3px #ffffff); */
+}
+
+.details {
+    /* background-color: #25252590; */
+    height: 100%;
+    position: relative;
+    padding: 1vw 1vw;
+}
+
+.backIcon {
+    position: absolute;
+    top: -2vw;
+    width: 2vw;
+    height: auto;
+    cursor: pointer;
+    z-index: 4;
+    transition: 0.3s;
+
+}
+
+.backIcon:hover {
+    scale: 0.95;
+}
+
+.backIcon:hover::after {
+    scale: 1.12;
+}
+
+.title {
+    font-size: 2vw;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.address {
+    width: 100%;
+    padding-top: 0.5vw;
+    font-size: 0.8vw;
+    color: #ffffff90;
+}
+
+.about {
+    white-space: pre-wrap;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+@keyframes FadeUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

@@ -6,6 +6,7 @@ import Project from "@/Components/Sections/projects";
 import Resume from "@/Components/Sections/resume";
 import styles from '@/styles/Home.module.css'
 import { useRouter } from 'next/router';
+import Exprience from '@/Components/Sections/exprience';
 
 const Home = ({ tab }) => {
   const router = useRouter()

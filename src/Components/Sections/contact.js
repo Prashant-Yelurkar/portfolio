@@ -50,7 +50,7 @@ const Contact = () => {
             const data = await response.json();
 
             if (data.success) {
-                toast.success('Email sent successfully!');
+                toast.success('Thank You!!!');
                 setDetails({
                     fname: "",
                     lname: "",
@@ -62,7 +62,7 @@ const Contact = () => {
             }
         } catch (err) {
             console.error(err);
-            toast.error('Failed to send email.');
+            toast.error('Failed to Record Your Query');
         }
         finally {
             setLoading(false)
