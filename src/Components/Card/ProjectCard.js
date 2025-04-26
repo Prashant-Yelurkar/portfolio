@@ -3,6 +3,7 @@ import styles from './projectCard.module.css';
 import githubIcon from '@/Assets/Icons/github.svg';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { toast } from 'sonner';
 
 const ProjectCard = (props) => {
     const { name, desc, img, git, hostLink } = props;
@@ -14,7 +15,9 @@ const ProjectCard = (props) => {
     };
 
     const handleCardClick = () => {
-        router.push(hostLink);
+        if (hostLink)
+            return router.push(hostLink);
+        toast.error("Hosting is not Live")
     };
 
     return (

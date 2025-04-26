@@ -150,13 +150,19 @@ export const Education = [
 
 ]
 
-import vibrtProject from '@/Assets/Company/projects/vibrt.png'
 import vibrtIcon from '@/Assets/Company/icon/vibrt.svg'
+import vibrtProject from '@/Assets/Company/projects/vibrt.png'
 import tuskarProject from '@/Assets/Company/projects/tuskar.png'
+import InstagramProject from '@/Assets/Company/projects/instagramAutomation.png'
 import vibrtPhoto1 from '@/Assets/Company/achivements/vibrt1.png'
 import vibrtPhoto2 from '@/Assets/Company/achivements/vibrt2.png'
-import vibrtPhoto3 from '@/Assets/Company/achivements/vibrt3.png'
-import vibrtPhoto4 from '@/Assets/Company/achivements/vibrt4.png'
+import vibrtPhoto3 from '@/Assets/Company/achivements/vibrt3.1.png'
+import vibrtPhoto4 from '@/Assets/Company/achivements/vibrt4.1.png'
+
+
+import softscribbleIcon from '@/Assets/Company/icon/softscribble.png'
+import softscribbleProject from '@/Assets/Company/projects/softscribble.png'
+
 
 
 export const Exprience = [
@@ -190,25 +196,11 @@ In addition to web development, I contributed to the development of an automatio
                 hostLink: 'https://www.vibrt.com/tusker/index.html'
             },
             {
-                id: 2,
-                name: "Tuskar",
-                desc: "Website",
-                img: tuskarProject,
-                hostLink: 'https://www.vibrt.com/tusker/index.html'
-            },
-            {
-                id: 2,
-                name: "Tuskar",
-                desc: "Website",
-                img: tuskarProject,
-                hostLink: 'https://www.vibrt.com/tusker/index.html'
-            },
-            {
-                id: 2,
-                name: "Tuskar",
-                desc: "Website",
-                img: tuskarProject,
-                hostLink: 'https://www.vibrt.com/tusker/index.html'
+                id: 3,
+                name: "Instagram Bot",
+                desc: "Automation",
+                img: InstagramProject,
+                // hostLink: 'https://www.vibrt.com/tusker/index.html'
             }
         ],
         photos: [
@@ -221,8 +213,27 @@ In addition to web development, I contributed to the development of an automatio
         link: "https://softscribble.com/index.html",
         name: "Softscribble Pvt Ltd",
         designation: "Junior Developer",
-        duration: "May 2020 - December 2022",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        duration: "May 2022 - December 2022",
+        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        address: " topaz building, 115, above Udipi restaurant, opposite front of Wockhardt Hospitals, Mumbai, Maharashtra 400011",
+        icon: softscribbleIcon,
+        about: `
+In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+
+In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
+`,
+        projects: [
+            {
+                id: 1,
+                name: "Softscribble.com",
+                desc: "Website",
+                img: softscribbleProject,
+                hostLink: 'https://softscribble.com/'
+            },
+        ],
+        photos: [
+            vibrtPhoto1, vibrtPhoto2, vibrtPhoto3, vibrtPhoto4
+        ]
     },
     {
         id: 3,

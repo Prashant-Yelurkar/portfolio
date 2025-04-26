@@ -29,7 +29,12 @@ a {
 .swiper-pagination {
   /* display: none; */
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
+}
+
+.swiper-pagination-bullet {
+  width: 0.5vw !important;
+  height: 0.5vw !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -38,4 +43,12 @@ a {
 
 .nextjs-toast {
   display: none !important;
+}
+
+@media (max-width: 600px) {
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
 }

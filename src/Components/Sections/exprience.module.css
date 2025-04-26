@@ -2,36 +2,37 @@
     position: relative;
     animation: FadeUp 1s ease-in;
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     color: whitesmoke;
+    padding-bottom: 20px;
 }
 
 
 .background {
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 100%;
+    max-height: 700px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* z-index: 1; */
 }
 
 .background img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.07;
-    /* filter: drop-shadow(0px 0px 3px #ffffff);
-    -webkit-filter: drop-shadow(0px 0px 3px #ffffff); */
+    width: 60%;
+    height: auto;
+    opacity: 0.09;
+
 }
 
 .details {
-    /* background-color: #25252590; */
     height: 100%;
-    position: relative;
     padding: 1vw 1vw;
+    top: 0;
 }
 
 .backIcon {
@@ -66,7 +67,13 @@
     color: #ffffff90;
 }
 
+.designation {
+    font-size: 1vw;
+    padding-top: 0.5vw;
+}
+
 .about {
+    font-size: 0.9vw;
     white-space: pre-wrap;
     font-family: sans-serif;
     line-height: 1.6;

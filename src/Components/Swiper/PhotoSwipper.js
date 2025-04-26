@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import styles from "./photo.module.css"
 import Image from 'next/image';
 
-const PhotoSwipper = ({ data }) => {
+const PhotoSwipper = ({ data, onSelect }) => {
     return (
         <div className={styles.bottom_oc}>
             <Swiper
@@ -22,7 +22,7 @@ const PhotoSwipper = ({ data }) => {
                     {
                         "0": {
                             "slidesPerView": 1,
-                            "spaceBetween": 10
+                            "spaceBetween": 20
                         },
                         "640": {
                             "slidesPerView": 2,
@@ -30,11 +30,11 @@ const PhotoSwipper = ({ data }) => {
                         },
                         "768": {
                             "slidesPerView": 3,
-                            "spaceBetween": 40
+                            "spaceBetween": 20
                         },
                         "1024": {
                             "slidesPerView": 3,
-                            "spaceBetween": 50
+                            "spaceBetween": 20
                         }
                     }
                 }
@@ -45,8 +45,10 @@ const PhotoSwipper = ({ data }) => {
             >
                 {data.map((photo, index) => (
 
-                    <SwiperSlide className={styles.swiper_slide}  >
+                    <SwiperSlide className={styles.swiper_slide}
+                        onClick={() => onSelect(photo)} >
                         <div
+
                             className={styles.photos}>
                             <Image
                                 key={index}

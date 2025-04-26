@@ -34,13 +34,13 @@ const Resume = () => {
     };
 
     const [selectedInfo, setSelectedInfo] = useState({
-        name: '',
+        type: '',
         id: null
     })
 
     const Pages = {
-        "Exprience": <ExprienceInfoLayout onBack={() => setSelectedInfo({})} />,
-        "Education": <ExprienceInfoLayout onBack={() => setSelectedInfo({})} />
+        "Exprience": <ExprienceInfoLayout data={selectedInfo} onBack={() => setSelectedInfo({})} />,
+        "Education": <ExprienceInfoLayout data={selectedInfo} onBack={() => setSelectedInfo({})} />
     }
     return (
         <div
@@ -68,10 +68,7 @@ const Resume = () => {
                                 {
                                     Exprience.map((item, index) => (
                                         <ExprienceCard
-                                            onSelect={() => setSelectedInfo({
-                                                name: "Exprience",
-                                                id: item.id
-                                            })}
+                                            onSelect={() => setSelectedInfo({ ...item, type: "Education" })}
                                             key={index}
                                             {...item}
                                             isLast={Exprience.length - 1 != index} />
@@ -112,7 +109,7 @@ const Resume = () => {
                         </div>
                     </>
                     :
-                    Pages[selectedInfo.name]
+                    Pages[selectedInfo.type]
             }
 
         </div >

@@ -13,7 +13,6 @@ const ProjectSwipper = ({ data }) => {
             <Swiper
                 loop={true}
                 slidesPerView={"auto"}
-
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
@@ -22,7 +21,7 @@ const ProjectSwipper = ({ data }) => {
                     {
                         "0": {
                             "slidesPerView": 1,
-                            "spaceBetween": 10
+                            "spaceBetween": 20
                         },
                         "640": {
                             "slidesPerView": 2,
@@ -30,11 +29,11 @@ const ProjectSwipper = ({ data }) => {
                         },
                         "768": {
                             "slidesPerView": 3,
-                            "spaceBetween": 40
+                            "spaceBetween": 20
                         },
                         "1024": {
                             "slidesPerView": 3,
-                            "spaceBetween": 50
+                            "spaceBetween": 20
                         }
                     }
                 }
@@ -58,7 +57,7 @@ const ProjectSwipper = ({ data }) => {
                 ))}
             </Swiper>
 
-        </div>
+        </div >
     )
 }
 

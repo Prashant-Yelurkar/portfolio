@@ -1,23 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BackIcon from '@/Assets/Icons/back.png'
 import Image from 'next/image'
 import styles from './exprience.module.css'
 import BlockTitle from '../Title/BolockTitle'
 import achivementIcon from '@/Assets/Icons/achivements.png'
 import projectIcon from '@/Assets/Icons/project.png'
-import { Exprience } from '@/Utils/data'
 import ProjectSwipper from '../Swiper/ProjectScroller'
 import PhotoSwipper from '../Swiper/PhotoSwipper'
+import Viewer from '../ImageViewer/Viewer'
 
 
 const ExprienceInfoLayout = (props) => {
-    const { onBack } = props;
-    const data = Exprience[0];
+    const { onBack, data } = props;
+    const exprience = data;
+    const [imageViewer, setImageViewer] = useState('')
     return (
         <div className={styles.main}>
+            {imageViewer && <Viewer src={imageViewer} onClose={() => setImageViewer("")} />}
             <div
                 className={styles.background}>
-                <Image src={data.icon} alt='icon' />
+                <Image src={exprience.icon} alt='icon' />
             </div>
             <div className={styles.details}>
                 <Image
@@ -27,23 +29,23 @@ const ExprienceInfoLayout = (props) => {
                     className={styles.backIcon} />
                 <h4
                     className={styles.title}>
-                    {data.name}
+                    {exprience.name}
                 </h4>
                 <p
                     className={styles.address}>
-                    {data.address}
+                    {exprience.address}
                 </p>
-                <h3>{data.designation}</h3>
+                <h3 className={styles.designation}>{exprience.designation}</h3>
                 <div
-                    style={{ whiteSpace: 'pre-wrap', fontFamily: 'sans-serif', lineHeight: '1.6' }}
                     className={styles.about}>
-                    {data.about}
+                    {exprience.about}
                 </div>
+                <br />
                 <BlockTitle title={"Projects"} icon={projectIcon} />
-                <ProjectSwipper data={data.projects} />
+                <ProjectSwipper data={exprience.projects} />
 
                 <BlockTitle title={"Achivements Album"} icon={achivementIcon} />
-                <PhotoSwipper data={data.photos} />
+                <PhotoSwipper data={exprience.photos} onSelect={(img) => setImageViewer(img)} />
 
             </div>
         </div>
