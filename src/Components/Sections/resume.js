@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './resume.module.css'
 import HeadTitle from '../Title/HeadTitle'
 import BlockTitle from '../Title/BolockTitle'
@@ -14,8 +14,8 @@ import SkillCard from '../Card/SkillCard'
 import downloadIcon from '@/Assets/Icons/download.png'
 import Image from 'next/image'
 import ExprienceInfoLayout from './exprience'
-const Resume = () => {
-
+const Resume = ({ onChange }) => {
+    const blockRef = useRef();
     const handleDownload = (e) => {
         e.preventDefault();
 
@@ -42,11 +42,17 @@ const Resume = () => {
         "Exprience": <ExprienceInfoLayout data={selectedInfo} onBack={() => setSelectedInfo({})} />,
         "Education": <ExprienceInfoLayout data={selectedInfo} onBack={() => setSelectedInfo({})} />
     }
+
+    useEffect(() => {
+        onChange()
+    }, selectedInfo.id)
     return (
         <div
+            ref={blockRef}
             className={styles.main}>
             {
-                !selectedInfo.id ?
+                selectedInfo.id ?
+                    Pages[selectedInfo.type] :
                     <>
                         <HeadTitle title={'Resume'} />
 
@@ -108,8 +114,7 @@ const Resume = () => {
                             </button>
                         </div>
                     </>
-                    :
-                    Pages[selectedInfo.type]
+
             }
 
         </div >

@@ -4,7 +4,9 @@
     -webkit-animation: FadeUp 1s ease-in;
     flex: 1;
     width: 100%;
+    height: fit-content;
     margin-bottom: 20px;
+    /* overflow: hidden; */
 }
 
 .container {

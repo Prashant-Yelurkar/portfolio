@@ -10,6 +10,21 @@ import Exprience from '@/Components/Sections/exprience';
 
 const Home = ({ tab }) => {
   const router = useRouter()
+  const blockRef = useRef();
+
+  const handleTabChange = (tab) => {
+    if (selectedTab?.label === tab?.label) return;
+    router.push(tab.label.toLowerCase())
+    if (blockRef.current) {
+      blockRef.current.scrollTop = 0;
+    }
+  };
+
+  const onTabChnage = () => {
+    if (blockRef.current) {
+      blockRef.current.scrollTop = 0;
+    }
+  }
 
 
   const TabData = [
@@ -19,7 +34,7 @@ const Home = ({ tab }) => {
     },
     {
       label: "Resume",
-      tab: <Resume />,
+      tab: <Resume onChange={onTabChnage} />,
     },
     {
       label: "Projects",
@@ -31,21 +46,10 @@ const Home = ({ tab }) => {
     }
   ];
 
-  const blockRef = useRef();
-
-
-
   const [selectedTab, setSelectedTab] = useState(
     TabData.find((item) => item.label.toLowerCase() === tab?.toLowerCase()) || TabData[0]
   );
 
-  const handleTabChange = (tab) => {
-    if (selectedTab.label === tab.label) return;
-    router.push(tab.label.toLowerCase())
-    if (blockRef.current) {
-      blockRef.current.scrollTop = 0;
-    }
-  };
 
   useEffect(() => {
     setSelectedTab(TabData.find((item) => item.label.toLowerCase() === tab?.toLowerCase()) || TabData[0])

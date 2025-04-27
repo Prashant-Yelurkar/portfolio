@@ -162,6 +162,27 @@ import vibrtPhoto4 from '@/Assets/Company/achivements/vibrt4.1.png'
 
 import softscribbleIcon from '@/Assets/Company/icon/softscribble.png'
 import softscribbleProject from '@/Assets/Company/projects/softscribble.png'
+import softscribblePhoto1 from '@/Assets/Company/achivements/softscribble1.png'
+import softscribblePhoto2 from '@/Assets/Company/achivements/softscribble2.png'
+
+
+import sublimeIcon from '@/Assets/Company/icon/softscribble.png'
+import sublimePhoto2 from '@/Assets/Company/achivements/sublime.jpg'
+
+
+import varscoftIcon from '@/Assets/Company/icon/varcsoft.png'
+import ipsProject from '@/Assets/Company/projects/ips.png'
+import jkiProject from '@/Assets/Company/projects/jkj.png'
+import magicoProject from '@/Assets/Company/projects/magico.png'
+import skinshellProject from '@/Assets/Company/projects/skinshell.png'
+import varcbytesBsProject from '@/Assets/Company/projects/varcbytesbs.png'
+import varcbytesprProject from '@/Assets/Company/projects/varcbytespr.png'
+import varscoft1 from '@/Assets/Company/achivements/varcsoft1.jpg'
+import varscoft2 from '@/Assets/Company/achivements/varcsoft2.jpg'
+
+
+
+import varscoft3 from '@/Assets/Company/achivements/varcsoft3.jpg'
 
 
 
@@ -232,7 +253,7 @@ In addition to web development, I contributed to the development of an automatio
             },
         ],
         photos: [
-            vibrtPhoto1, vibrtPhoto2, vibrtPhoto3, vibrtPhoto4
+            softscribblePhoto1, softscribblePhoto2
         ]
     },
     {
@@ -241,7 +262,26 @@ In addition to web development, I contributed to the development of an automatio
         name: "Sublime Enterprises",
         designation: "PHP Developer",
         duration: "July 2023 - October 2023",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        address: "14A, patel building, near JC Diagnostic centre, Worli naka, G. K. Road, Mumbai 400018.",
+        icon: sublimeIcon,
+        about: `
+In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+
+In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
+`,
+        projects: [
+            {
+                id: 1,
+                name: "Softscribble.com",
+                desc: "Website",
+                img: softscribbleProject,
+                hostLink: 'https://softscribble.com/'
+            },
+        ],
+        photos: [
+            sublimePhoto2
+        ]
     },
     {
         id: 4,
@@ -249,16 +289,112 @@ In addition to web development, I contributed to the development of an automatio
         name: "Varcsoft",
         designation: "Full Stack Developer",
         duration: "March 2024 - August 2024",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        address: "14A, patel building, near JC Diagnostic centre, Worli naka, G. K. Road, Mumbai 400018.",
+        icon: varscoftIcon,
+        about: `
+In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
 
+In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
+`,
+        projects: [
+            {
+                id: 2,
+                name: "IPC Dashboard",
+                desc: "Website",
+                img: ipsProject,
+            },
+            {
+                id: 3,
+                name: "JKJ India",
+                desc: "Website",
+                img: jkiProject,
+            },
+            {
+                id: 5,
+                name: "Magico Design",
+                desc: "Website",
+                img: magicoProject,
+            },
+            {
+                id: 6,
+                name: "Skinshell",
+                desc: "Website",
+                img: skinshellProject,
+            },
+            {
+                id: 7,
+                name: "Varcbytes Dashboard",
+                desc: "Website",
+                img: varcbytesBsProject,
+            },
+            {
+                id: 8,
+                name: "Varcbytes Portfolio",
+                desc: "Website",
+                img: varcbytesprProject,
+            },
+        ],
+        photos: [
+            varscoft3
+        ]
     },
+
     {
         id: 5,
         link: 'https://www.varcsoft.com/',
         name: "Varcsoft",
         designation: "Full Stack Developer",
         duration: "October 2024 - Present",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        address: "14A, patel building, near JC Diagnostic centre, Worli naka, G. K. Road, Mumbai 400018.",
+        icon: varscoftIcon,
+        about: `
+In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+
+In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
+`,
+        projects: [
+            {
+                id: 2,
+                name: "IPC Dashboard",
+                desc: "Website",
+                img: ipsProject,
+            },
+            {
+                id: 3,
+                name: "JKJ India",
+                desc: "Website",
+                img: jkiProject,
+            },
+            {
+                id: 5,
+                name: "Magico Design",
+                desc: "Website",
+                img: magicoProject,
+            },
+            {
+                id: 6,
+                name: "Skinshell",
+                desc: "Website",
+                img: skinshellProject,
+            },
+            {
+                id: 7,
+                name: "Varcbytes Dashboard",
+                desc: "Website",
+                img: varcbytesBsProject,
+            },
+            {
+                id: 8,
+                name: "Varcbytes Portfolio",
+                desc: "Website",
+                img: varcbytesprProject,
+            },
+        ],
+        photos: [
+            varscoft1, varscoft2
+        ]
     },
 
 ]

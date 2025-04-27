@@ -2,10 +2,11 @@
     position: relative;
     animation: FadeUp 1s ease-in;
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     color: whitesmoke;
     padding-bottom: 20px;
+
 }
 
 
@@ -77,6 +78,46 @@
     white-space: pre-wrap;
     font-family: sans-serif;
     line-height: 1.6;
+}
+
+
+@media (max-width: 600px) {
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .backIcon {
+        position: fixed;
+        top: 15px;
+        left: 20px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .address {
+        padding-top: 10px;
+        font-size: 11px;
+    }
+
+    .designation {
+        font-size: 13px;
+        padding-top: 12px;
+    }
+
+    .about {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
 }
 
 @keyframes FadeUp {
