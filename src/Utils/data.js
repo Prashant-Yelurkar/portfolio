@@ -516,7 +516,7 @@ import TurfProject from '@/Assets/Projects/TurfManagemant.png'
 import calculatorProject from '@/Assets/Projects/Calculator.png'
 import MADProject from '@/Assets/Projects/MAD.png'
 import invoiceProject from '@/Assets/Projects/sp.travels.png'
-import ExaminationProject from '@/Assets/Projects/examination.png'
+import ExaminationProject from '@/Assets/Projects/Examination.png'
 
 
 export const MyProjects = [
