@@ -5,7 +5,11 @@ import BlockTitle from '../Title/BolockTitle'
 import educationIcon from '@/Assets/Icons/education.png'
 import exprienceIcon from '@/Assets/Icons/experience.png'
 import teckStackIcon from '@/Assets/Icons/teckStack.png'
-import { Education, Exprience, FrameWork, Language } from '@/Utils/data'
+import certificateIcon from '@/Assets/Icons/certificate.png'
+import achivementsIcon from '@/Assets/Icons/achivements.png'
+
+
+import { Certifications, Education, Exprience, FrameWork, Language, MyAchivements } from '@/Utils/data'
 import EducationCard from '../Card/EducationCard'
 import ExprienceCard from '../Card/ExprienceCard'
 import InfinityScroller from '../Scroller/InfinityScroller'
@@ -14,8 +18,13 @@ import SkillCard from '../Card/SkillCard'
 import downloadIcon from '@/Assets/Icons/download.png'
 import Image from 'next/image'
 import ExprienceInfoLayout from './exprience'
+import PhotoSwipper from '../Swiper/PhotoSwipper'
+import Viewer from '../ImageViewer/Viewer'
+
 const Resume = ({ onChange }) => {
     const blockRef = useRef();
+    const [imageViewer, setImageViewer] = useState('')
+
     const handleDownload = (e) => {
         e.preventDefault();
 
@@ -44,12 +53,14 @@ const Resume = ({ onChange }) => {
     }
 
     useEffect(() => {
-        onChange()
+        if (selectedInfo.id)
+            onChange()
     }, selectedInfo.id)
     return (
         <div
             ref={blockRef}
             className={styles.main}>
+
             {
                 selectedInfo.id ?
                     Pages[selectedInfo.type] :
@@ -99,7 +110,18 @@ const Resume = ({ onChange }) => {
                                 })
                             }
 
+
                         </InfinityScroller>
+                        <BlockTitle title={"Achivements"} icon={achivementsIcon} />
+                        <PhotoSwipper data={MyAchivements}
+                            onSelect={(img) => setImageViewer(img)}
+                        />
+
+                        <BlockTitle title={"Certificates"} icon={certificateIcon} />
+                        <PhotoSwipper data={Certifications}
+                            onSelect={(img) => setImageViewer(img)}
+                        />
+
                         <div className={styles.btn_block}>
                             <button
                                 aria-label="Download Resume"
@@ -116,6 +138,7 @@ const Resume = ({ onChange }) => {
                     </>
 
             }
+            {imageViewer && <Viewer src={imageViewer} onClose={() => setImageViewer("")} />}
 
         </div >
     )

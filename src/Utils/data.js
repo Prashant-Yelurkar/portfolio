@@ -578,3 +578,30 @@ export const MyProjects = [
     },
 
 ]
+
+
+import IF4IW from '@/Assets/certificates/IF4IA-1.jpg'
+import IF5IW from '@/Assets/certificates/IF5IA-1.jpg'
+import TechnothonW from '@/Assets/certificates/technothinWinner.jpg'
+import v_technovation from '@/Assets/certificates/v-technovation.jpg'
+
+
+import cProgrammimg from '@/Assets/certificates/cProgrammimg.jpg'
+import hartzsoft from '@/Assets/certificates/hertzsoftPr.jpg'
+import InternalHackVP from '@/Assets/certificates/VP-internalHackthon.jpg'
+import TechnothonP from '@/Assets/certificates/technothonPr.jpg'
+import Techshala from '@/Assets/certificates/TechShala.jpg'
+import vidhyavardhaniCoding from '@/Assets/certificates/vidhyavardhainiCoding.jpg'
+import dattaCollege from '@/Assets/certificates/dattaCollege.jpg'
+import coherence1_0 from '@/Assets/certificates/coherence1.0.jpg'
+import gitHubCertificate from '@/Assets/certificates/git-github.jpg'
+import langChainCertificate from '@/Assets/certificates/LangChain.jpg'
+import multicon2025 from '@/Assets/certificates/multicon-w2025.jpg'
+
+export const MyAchivements = [
+    IF4IW, vibrtPhoto2, softscribblePhoto1, softscribblePhoto2, IF5IW, TechnothonW, v_technovation, sublimePhoto2, varscoft1, varscoft2, varscoft3
+]
+export const Certifications = [
+    cProgrammimg, hartzsoft, InternalHackVP, TechnothonP, Techshala, vidhyavardhaniCoding, dattaCollege, coherence1_0, gitHubCertificate, langChainCertificate, multicon2025
+
+]

@@ -16,12 +16,15 @@ const Home = ({ tab }) => {
     if (selectedTab?.label === tab?.label) return;
     router.push(tab.label.toLowerCase())
     if (blockRef.current) {
+      console.log("scroll");
+
       blockRef.current.scrollTop = 0;
     }
   };
 
   const onTabChnage = () => {
     if (blockRef.current) {
+      console.log("scroll2");
       blockRef.current.scrollTop = 0;
     }
   }
