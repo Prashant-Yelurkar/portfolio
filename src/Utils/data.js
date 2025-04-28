@@ -166,7 +166,7 @@ import softscribblePhoto1 from '@/Assets/Company/achivements/softscribble1.png'
 import softscribblePhoto2 from '@/Assets/Company/achivements/softscribble2.png'
 
 
-import sublimeIcon from '@/Assets/Company/icon/softscribble.png'
+import sublimeIcon from '@/Assets/Company/icon/sublime.png'
 import sublimePhoto2 from '@/Assets/Company/achivements/sublime.jpg'
 
 
@@ -183,6 +183,15 @@ import varscoft2 from '@/Assets/Company/achivements/varcsoft2.jpg'
 
 
 import varscoft3 from '@/Assets/Company/achivements/varcsoft3.jpg'
+import riserProject from '@/Assets/Company/projects/riserrealty.png'
+import tamayazProject from '@/Assets/Company/projects/tamayaz.png'
+import naimaiProject from '@/Assets/Company/projects/nimai.png'
+import naimaiAdminProject from '@/Assets/Company/projects/nimaiAdmin.png'
+import naimaiVendorAdminProject from '@/Assets/Company/projects/nimaiVenderAdmin.png'
+import optionsPrProject from '@/Assets/Company/projects/optionspf.png'
+import optionsPlProject from '@/Assets/Company/projects/optionspl.png'
+import optionsAdminProject from '@/Assets/Company/projects/optionsAdmin.png'
+
 
 
 
@@ -273,9 +282,16 @@ In addition to web development, I contributed to the development of an automatio
         projects: [
             {
                 id: 1,
-                name: "Softscribble.com",
-                desc: "Website",
-                img: softscribbleProject,
+                name: "MarathaMandal",
+                desc: "Email Automation",
+                img: sublimeIcon,
+                hostLink: 'https://softscribble.com/'
+            },
+            {
+                id: 2,
+                name: "Attendance System",
+                desc: "Wifi Based Attendance",
+                img: sublimeIcon,
                 hostLink: 'https://softscribble.com/'
             },
         ],
@@ -336,10 +352,9 @@ In addition to web development, I contributed to the development of an automatio
             },
         ],
         photos: [
-            varscoft3
+            varscoft1, varscoft2
         ]
     },
-
     {
         id: 5,
         link: 'https://www.varcsoft.com/',
@@ -357,43 +372,59 @@ In addition to web development, I contributed to the development of an automatio
         projects: [
             {
                 id: 2,
-                name: "IPC Dashboard",
+                name: "Riser Realty",
                 desc: "Website",
-                img: ipsProject,
+                img: riserProject,
+                hostLink: 'https://www.prorealti.com/'
             },
             {
                 id: 3,
-                name: "JKJ India",
+                name: "Tamayaz",
                 desc: "Website",
-                img: jkiProject,
+                img: tamayazProject,
             },
             {
                 id: 5,
-                name: "Magico Design",
-                desc: "Website",
-                img: magicoProject,
+                name: "Nimai",
+                desc: "EventManagement Website",
+                img: naimaiProject,
+                hostLink: "https://www.nimai.co.in/",
             },
             {
                 id: 6,
-                name: "Skinshell",
-                desc: "Website",
-                img: skinshellProject,
+                name: "Nimai Admin",
+                desc: "Admin Pannel",
+                img: naimaiAdminProject,
             },
             {
                 id: 7,
-                name: "Varcbytes Dashboard",
-                desc: "Website",
-                img: varcbytesBsProject,
+                name: "Niamai Vendors",
+                desc: "Vendor Pannel",
+                img: naimaiVendorAdminProject,
             },
             {
                 id: 8,
-                name: "Varcbytes Portfolio",
-                desc: "Website",
-                img: varcbytesprProject,
+                name: "Options",
+                desc: "Portfolio",
+                img: optionsPrProject,
+                hostLink: 'https://www.optiion.co/',
+            },
+            {
+                id: 9,
+                name: "Options Platform",
+                desc: "Dating application",
+                img: optionsPlProject,
+                hostLink: "https://app.optiion.co/"
+            },
+            {
+                id: 10,
+                name: "Options Dashboard",
+                desc: "Admin Pannel",
+                img: optionsAdminProject,
             },
         ],
         photos: [
-            varscoft1, varscoft2
+            varscoft3
         ]
     },
 
