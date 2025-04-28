@@ -8,6 +8,7 @@ import projectIcon from '@/Assets/Icons/project.png'
 import ProjectSwipper from '../Swiper/ProjectScroller'
 import PhotoSwipper from '../Swiper/PhotoSwipper'
 import Viewer from '../ImageViewer/Viewer'
+import Link from 'next/link'
 
 
 const ExprienceInfoLayout = (props) => {
@@ -29,7 +30,9 @@ const ExprienceInfoLayout = (props) => {
                     className={styles.backIcon} />
                 <h4
                     className={styles.title}>
-                    {exprience.name}
+                    <Link href={data.link}>
+                        {exprience.name}
+                    </Link>
                 </h4>
                 <p
                     className={styles.address}>

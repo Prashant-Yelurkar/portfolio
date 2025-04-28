@@ -127,7 +127,7 @@ export const Education = [
     },
     {
         link: "https://vpt.edu.in/diploma/polytechnic/index.html",
-        name: "VidyaLankar Polytecnic",
+        name: "Vidyalankar Polytecnic",
         degree: "Diploma (iInformation Technology)",
         duration: "2020-2023",
         marks: {
