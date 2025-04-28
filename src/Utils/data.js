@@ -285,14 +285,12 @@ In addition to web development, I contributed to the development of an automatio
                 name: "MarathaMandal",
                 desc: "Email Automation",
                 img: sublimeIcon,
-                hostLink: 'https://softscribble.com/'
             },
             {
                 id: 2,
                 name: "Attendance System",
                 desc: "Wifi Based Attendance",
                 img: sublimeIcon,
-                hostLink: 'https://softscribble.com/'
             },
         ],
         photos: [
@@ -517,7 +515,8 @@ import OSProject from '@/Assets/Projects/OS.png'
 import TurfProject from '@/Assets/Projects/TurfManagemant.png'
 import calculatorProject from '@/Assets/Projects/Calculator.png'
 import MADProject from '@/Assets/Projects/MAD.png'
-
+import invoiceProject from '@/Assets/Projects/sp.travels.png'
+import ExaminationProject from '@/Assets/Projects/examination.png'
 
 
 export const MyProjects = [
@@ -538,6 +537,14 @@ export const MyProjects = [
         hostLink: 'https://prashant-yelurkar.github.io/Scheduling_Algorithms/'
     },
     {
+        id: 7,
+        name: "Examination",
+        desc: "Desktop Based Examination",
+        img: ExaminationProject,
+        git: 'https://github.com/Prashant-Yelurkar/Examination-app',
+        hostLink: 'https://examination-app.vercel.app/auth/login'
+    },
+    {
         id: 3,
         name: "Turf Management",
         desc: "Website",
@@ -545,14 +552,6 @@ export const MyProjects = [
         git: 'https://github.com/Prashant-Yelurkar/Turf-Managemant-Frontened',
         hostLink: 'https://turf-managemant-frontened.vercel.app/'
     },
-    // {
-    //     id: 4,
-    //     name: "Calculator",
-    //     desc: "Simple Calculator",
-    //     img: calculatorProject,
-    //     git: 'https://github.com/Prashant-Yelurkar/Calculator.git',
-    //     hostLink: 'https://prashant-yelurkar.github.io/Calculator/'
-    // },
     {
         id: 5,
         name: "Mobile Appliacation ",
@@ -561,6 +560,21 @@ export const MyProjects = [
         git: 'https://github.com/Prashant-Yelurkar/MobileApplicationDevelopment',
         hostLink: 'https://github.com/Prashant-Yelurkar/MobileApplicationDevelopment'
     },
-
+    {
+        id: 6,
+        name: "SP.Travels",
+        desc: "Invoice Generation",
+        img: invoiceProject,
+        git: 'https://github.com/Prashant-Yelurkar/SP.TRAVLES',
+        hostLink: 'https://sp-travles-invoice.vercel.app/'
+    },
+    {
+        id: 4,
+        name: "Calculator",
+        desc: "Simple Calculator",
+        img: calculatorProject,
+        git: 'https://github.com/Prashant-Yelurkar/Calculator.git',
+        hostLink: 'https://prashant-yelurkar.github.io/Calculator/'
+    },
 
 ]
