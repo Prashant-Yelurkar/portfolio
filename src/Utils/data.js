@@ -68,9 +68,9 @@ import designIcon from '@/Assets/Images/design.png'
 import developIcon from '@/Assets/Images/develop.png'
 export const Aboutdata = {
     about:
-        `I am Prashant Yelurkar, an engineering student at Thakur College with a passion for software development, blockchain, and automation. My expertise includes React Native, Node.js, Python, Java, and Selenium, allowing me to build innovative and secure applications.
+        `I'm a B.Tech student specializing in Artificial Intelligence & Data Science at Thakur College of Engineering and Technology, with a strong passion for full-stack web development. I’ve gained hands-on experience by contributing to real-world projects through internships, working on everything from e-commerce platforms to automation tools using technologies like Next.js, Node.js, and MongoDB.
 
-I have worked on projects like a chatbot Chrome extension, an online voting system with biometrics, an Instagram automation tool, and a learning app for mobile development. I enjoy exploring new technologies and creating impactful solutions.`,
+Beyond academics, I enjoy building tools that solve practical problems and improve user experiences. I’ve led technical teams, mentored peers, and participated in hackathons and tech events to keep growing as a developer. My focus is always on learning, innovating, and delivering clean, scalable solutions.`,
 
     roles: [
         {
@@ -96,21 +96,23 @@ I have worked on projects like a chatbot Chrome extension, an online voting syst
     ],
     testimonials: [
         {
-            name: "John Doe",
-            description: "Prashant is a highly skilled and dedicated developer. He has a keen ey"
+            name: "Adarsh Singh",
+            description: "Prashant is focused, quick to learn, and always full of ideas."
         },
         {
-            name: "Jane Doe",
-            description: "Prashant is a highly skilled and dedicated developer. He has a keen ey"
+            name: "Vivek Bapna",
+            description: "Creative, helpful, and always ready for a challenge."
         },
         {
-            name: "John Doe",
-            description: "Prashant is a highly skilled and dedicated developer. He has a keen ey"
+            name: "Saakshi Mishra",
+            description: "Smart, reliable, and great at building tech solutions."
         },
         {
-            name: "Jane Doe",
-            description: "Prashant is a highly skilled and dedicated developer. He has a keen ey"
+            name: "Gauri",
+            description: "A true team player with strong problem-solving skills."
         }
+
+
     ]
 }
 export const Education = [
@@ -121,9 +123,9 @@ export const Education = [
         duration: "2023-2026",
         marks: {
             type: 'CGPA',
-            marks: '8.91'
+            marks: '9.66'
         },
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        description: "Expanding my skills in AI and web development through real-world projects, internships, and continuous self-learning beyond the classroom."
     },
     {
         link: "https://vpt.edu.in/diploma/polytechnic/index.html",
@@ -134,7 +136,7 @@ export const Education = [
             type: '%',
             marks: '88.00'
         },
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        description: "Strengthened my technical base while actively working on side projects and exploring new technologies to stay ahead of the curve"
     },
     {
         link: 'https://maps.app.goo.gl/QpNTzVpXR76z9KiG7',
@@ -145,7 +147,7 @@ export const Education = [
             type: '%',
             marks: '91.20'
         },
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering "
+        description: "Built a strong academic discipline early on, which helped me stay focused and motivated to keep learning and improving over time."
     }
 
 ]
@@ -203,13 +205,15 @@ export const Exprience = [
         address: " No 302, BLDG, R, Abdul Rehm REHM BLDG,400008, R 302, Abdul Rehm BLDGR, 302, Abdul Rehman St, Navpada, Mumbai, Maharashtra 400051",
         designation: "Frontend Web Developer",
         duration: "June 2022 - Auguest 2022",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        description: `Contributed to multiple live projects including the Vibrt website, an e-commerce platform, and an Instagram automation tool.
+Focused on improving user experience and developing automation features to enhance digital efficiency.`,
         icon: vibrtIcon,
         about: `
-In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+At Vibrt Pvt Ltd, I began my journey into real-time web development by working on several live projects. I was involved in enhancing the Vibrt official website and supporting internal feature development. This role introduced me to agile workflows and team collaboration, giving me firsthand experience in building digital products from scratch.
 
-In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
-`,
+One of my key contributions was to an innovative Hearing Aid E-commerce Website, which not only sold hearing devices but also included a feature to calculate users' hearing disability and determine their stage of hearing loss. I worked on implementing user input forms, logic for stage calculation, and seamless front-end interactions to ensure a smooth user experience.
+
+This internship sharpened my skills in HTML, CSS, JavaScript, and PHP. It also gave me experience with user-centric design and data-driven UI logic. Most importantly, it laid a strong technical and problem-solving foundation that I’ve built upon throughout my development career.`,
         projects: [
             {
                 id: 1,
@@ -244,14 +248,16 @@ In addition to web development, I contributed to the development of an automatio
         name: "Softscribble Pvt Ltd",
         designation: "Junior Developer",
         duration: "May 2022 - December 2022",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        description: `Built tools like WhatsApp automation and database managers, alongside responsive websites and marketing templates.
+Played a key role in streamlining business processes through customized software development.`,
         address: " topaz building, 115, above Udipi restaurant, opposite front of Wockhardt Hospitals, Mumbai, Maharashtra 400011",
         icon: softscribbleIcon,
         about: `
-In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+At Softscribble, I worked in a fast-paced development environment where I was responsible for creating tools and user interfaces that enhanced communication and automation for businesses. I focused heavily on front-end development using JavaScript, contributing to real-time, browser-based applications with a clean and intuitive user experience.
 
-In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
-`,
+A major project I contributed to was a WhatsApp Automation Tool built purely with JavaScript. My role involved developing the frontend interface, enabling users to create sessions via QR code scanning, send messages, and transmit images directly to WhatsApp numbers. I ensured the tool was user-friendly, responsive, and functional across devices, integrating real-time features to handle sessions and message dispatching seamlessly.
+
+This experience strengthened my JavaScript skills and deepened my understanding of frontend logic, event handling, and browser-based APIs. It was a valuable phase in my journey where I moved beyond static designs and started building dynamic, real-world tools that delivered measurable results to clients.`,
         projects: [
             {
                 id: 1,
@@ -271,14 +277,16 @@ In addition to web development, I contributed to the development of an automatio
         name: "Sublime Enterprises",
         designation: "PHP Developer",
         duration: "July 2023 - October 2023",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        description: `Worked on server-side scripting, creating automated email systems and a functional internal dashboard.
+Used PHP and cron jobs to enhance backend operations and task scheduling.`,
         address: "14A, patel building, near JC Diagnostic centre, Worli naka, G. K. Road, Mumbai 400018.",
         icon: sublimeIcon,
         about: `
-In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+At Sublime Enterprises, I focused primarily on server-side development using PHP. One of my main contributions was creating an automated email dispatch system using cron jobs, which handled scheduled communications for the company. I also helped build a dashboard that streamlined internal processes for data tracking and user interaction.
 
-In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
-`,
+These responsibilities exposed me to task scheduling and backend logic optimization, as well as working with large data sets and database queries. It was here that I began understanding the importance of performance optimization in real-world applications.
+
+This role allowed me to dive deeper into the back-end ecosystem, strengthening my grasp on PHP, MySQL, and server management. It was a formative stage in my journey, where I transitioned from front-end-centric work to robust backend architecture and logic handling`,
         projects: [
             {
                 id: 1,
@@ -303,14 +311,16 @@ In addition to web development, I contributed to the development of an automatio
         name: "Varcsoft",
         designation: "Full Stack Developer",
         duration: "March 2024 - August 2024",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        description: `Developed responsive websites using Next.js and integrated front-end with efficient backend systems.
+Contributed to various projects with a focus on performance and cross-platform compatibility.`,
         address: "14A, patel building, near JC Diagnostic centre, Worli naka, G. K. Road, Mumbai 400018.",
         icon: varscoftIcon,
         about: `
-In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+Joining Varcsoft as a Full Stack Developer Intern gave me exposure to modern frameworks like Next.js, which I used to build responsive and interactive websites. I collaborated with the team to deliver polished web applications, ensuring they were functional across different devices and browsers.
 
-In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
-`,
+I worked on several projects, integrating backend APIs and ensuring seamless interaction between frontend interfaces and backend systems. I also gained experience in deploying applications and managing performance and code optimization.
+
+This role marked a pivotal point in my journey, where I confidently took on end-to-end responsibilities—from designing UI components to handling backend routes. It significantly improved my expertise in full-stack JavaScript development, particularly using the MERN stack.`,
         projects: [
             {
                 id: 2,
@@ -359,14 +369,16 @@ In addition to web development, I contributed to the development of an automatio
         name: "Varcsoft",
         designation: "Full Stack Developer",
         duration: "October 2024 - Present",
-        description: "Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering Studied Artificial Intelligence and Data Science at Thakur College of Engineering ",
+        description: `Built full-stack platforms including an event management, spa, and real estate website with admin dashboards.
+Delivered scalable, user-friendly solutions tailored to business and customer needs.`,
         address: "14A, patel building, near JC Diagnostic centre, Worli naka, G. K. Road, Mumbai 400018.",
         icon: varscoftIcon,
         about: `
-In 2022, during the second year of my diploma, I completed a 6-week internship at Vibrt as a Web Developer. During this time, I worked on several real-world website projects, where I gained hands-on experience in both front-end and back-end development using HTML, CSS, JavaScript, jQuery, and PHP. I also used PHPMailer for email functionality integration.
+As a paid full-stack developer intern at Varcsoft, I took on more complex projects with real-world impact. I developed Nimai, an event management platform with separate dashboards for admins and vendors. I also built Tamayaz, a spa service website with features for managing services, bookings, and customer interactions, and RiserRealty, a real estate website with listing and search functionalities.
 
-In addition to web development, I contributed to the development of an automation tool using Python, which helped streamline internal processes. This internship not only strengthened my technical skills but also gave me valuable exposure to collaborative development and problem-solving in a professional environment.
-`,
+These projects allowed me to hone my skills in React, Next.js, Node.js, and MongoDB. I implemented user-friendly admin panels and ensured scalable, maintainable code for high-traffic websites. Working with real client data helped me understand how to balance functionality with performance and aesthetics.
+
+This phase of my journey cemented my position as a confident full-stack developer. I’ve grown not just in coding ability but in project planning, client communication, and delivering polished digital products that meet real business needs.`,
         projects: [
             {
                 id: 2,
