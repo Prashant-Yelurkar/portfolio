@@ -24,7 +24,6 @@ const Home = ({ tab }) => {
 
   const onTabChnage = () => {
     if (blockRef.current) {
-      console.log("scroll2");
       blockRef.current.scrollTop = 0;
     }
   }

@@ -6,9 +6,9 @@ import locationIcon from '@/Assets/Icons/location.png'
 export const ContactDetails = [
     {
         label: "Email",
-        data: 'devby.prashantyelurkar@gmail.com',
+        data: 'prashantyelurkar2004@gmail.com',
         icon: emailIcon,
-        link: 'mailto:devby.prashantyelurkar@gmail.com'
+        link: 'mailto:prashantyelurkar2004@gmail.com'
     },
     {
         label: "Phone",
@@ -616,4 +616,4 @@ export const MyAchivements = [
 export const Certifications = [
     cProgrammimg, hartzsoft, InternalHackVP, TechnothonP, Techshala, vidhyavardhaniCoding, dattaCollege, coherence1_0, gitHubCertificate, langChainCertificate, multicon2025
 
-]
+] 
