@@ -123,7 +123,7 @@ export const Education = [
         duration: "2023-2026",
         marks: {
             type: 'CGPA',
-            marks: '9.66'
+            marks: '9.44'
         },
         description: "Expanding my skills in AI and web development through real-world projects, internships, and continuous self-learning beyond the classroom."
     },
@@ -185,6 +185,7 @@ import varscoft2 from '@/Assets/Company/achivements/varcsoft2.jpg'
 
 
 import varscoft3 from '@/Assets/Company/achivements/varcsoft3.jpg'
+import varscoft4 from '@/Assets/Company/achivements/varcsoft4.jpg'
 import riserProject from '@/Assets/Company/projects/riserrealty.png'
 import tamayazProject from '@/Assets/Company/projects/tamayaz.png'
 import naimaiProject from '@/Assets/Company/projects/nimai.png'
@@ -368,7 +369,7 @@ This role marked a pivotal point in my journey, where I confidently took on end-
         link: 'https://www.varcsoft.com/',
         name: "Varcsoft",
         designation: "Full Stack Developer",
-        duration: "October 2024 - Present",
+        duration: "October 2024 - April 2025",
         description: `Built full-stack platforms including an event management, spa, and real estate website with admin dashboards.
 Delivered scalable, user-friendly solutions tailored to business and customer needs.`,
         address: "14A, patel building, near JC Diagnostic centre, Worli naka, G. K. Road, Mumbai 400018.",
@@ -434,7 +435,8 @@ This phase of my journey cemented my position as a confident full-stack develope
             },
         ],
         photos: [
-            varscoft3
+            varscoft3 , varscoft4
+
         ]
     },
 
@@ -611,7 +613,7 @@ import langChainCertificate from '@/Assets/certificates/LangChain.jpg'
 import multicon2025 from '@/Assets/certificates/multicon-w2025.jpg'
 
 export const MyAchivements = [
-    IF4IW, vibrtPhoto2, softscribblePhoto1, softscribblePhoto2, IF5IW, TechnothonW, v_technovation, sublimePhoto2, varscoft1, varscoft2, varscoft3
+    IF4IW, vibrtPhoto2, softscribblePhoto1, softscribblePhoto2, IF5IW, TechnothonW, v_technovation, sublimePhoto2, varscoft1, varscoft2, varscoft3 , varscoft4
 ]
 export const Certifications = [
     cProgrammimg, hartzsoft, InternalHackVP, TechnothonP, Techshala, vidhyavardhaniCoding, dattaCollege, coherence1_0, gitHubCertificate, langChainCertificate, multicon2025
