@@ -531,9 +531,25 @@ import calculatorProject from '@/Assets/Projects/Calculator.png'
 import MADProject from '@/Assets/Projects/MAD.png'
 import invoiceProject from '@/Assets/Projects/sp.travels.png'
 import ExaminationProject from '@/Assets/Projects/Examination.png'
-
+import NodeTalkProject from '@/Assets/Projects/NodeTalk.png'
+import MrAiHelperProject from '@/Assets/Projects/MrAIHepler.jpeg'
 
 export const MyProjects = [
+    {
+        id: 10,
+        name: "NodeTalk",
+        desc: "Real-Time Chatting Application",
+        img: NodeTalkProject,
+        git: 'https://github.com/Prashant-Yelurkar/NodeTalk',
+        hostLink: 'https://node-talk-henna.vercel.app/'
+    },
+    {
+        id: 0,
+        name: "Mr AI Helper",
+        desc: "Chat Bot",
+        img: MrAiHelperProject,
+
+    },
     {
         id: 1,
         name: "Memorry Game",
